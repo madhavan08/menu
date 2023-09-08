@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head><title>orders</title>
+<link rel="icon" href="delivery.jpg">
+</head>
+<center>
+<body>
+
+<fieldset style="width:500px" " height:700px">
+<center>
+<h1>Order Details</h1>
+<form action="order placed.html" method="get">
+<table align="center" cellspacing="20PX";>
+<tr>
+<th colspan="2"><h2><b>Your Details</b></h2></th>
+</tr>
+<tr>
+<td><label for="name">name</label>
+</td>
+<td><input type="text" id="name" name="name" required></td>
+</tr>
+<tr>
+<td><label for ="ph.no">mobile no:</label></td>
+<td><input type="tel" id="ph.no" name="ph.no" required pattern="[6-9]{1}[0-9]{9}"></td>
+</tr>
+
+<tr>
+<td><label>delivery Address</label></td>
+<td><input type="text" name="persaddress" required pattern="[A-Z a-z 0-9 .,/]"></td>
+</tr>
+
+<tr>
+<td><label>Landmark</label></td>
+<td><input type="text" name="persaddress"  pattern="[A-Z a-z 0-9 .,/]" placeholder="optional"></td>
+</tr>
+
+<tr>
+<td><label for ="pin">Pincode:</label></td>
+<td><input type="tel" id="pin" name="pin" required ></td>
+</tr>
+
+<tr>
+<td><label for="pay">payment</label></td>
+<td><input type="radio" id="G-pay" name="pay">
+	<label for="G-pay">G pay</label>
+	<input type="radio" id="Online " name="pay">
+	<label for="Online">Online Banking</label>
+	<input type="radio" id="cash" name="pay">
+	<label for="cash">Cash</label></td>
+</tr>
+	
+</table >
+<br>
+<table cellspacing="20PX">
+	
+<tr>
+<th colspan="2"><h2><b>Orders</b></th></tr>
+<tr>
+<td><label>For our specials and coffee<label></td>
+<td><select required style="width:170px">
+<option selected disabled> select</option>
+<option>cafe Royal</option>
+<option>cafe francois</option>
+<option>cream irish</option>
+<option>indian chai</option>
+<option>chocaccino</option>
+<option>Espresso </option>
+<option>Americano</option>
+<option>Cappuccino</option>
+<option>Mocha</option>
+<option>Cafe Latte</option>
+<option>Caramel Macchiato</option>
+<option>Piccolo</option>
+<option>mineral water</option>
+</select>
+</tr>
+<tr>
+<td><label for="spin">quantity</label></td>
+<td><input type="number" id="spin" name="spin" min="0" max="20"style="width:165px"></td>
+</tr>
+<tr>
+<td><label>For our tea and pastries<label></td>
+<td><select required style="width:170px">
+<option selected disabled> select</option>
+<option>Black tea</option>
+<option>Lemon tea </option>
+<option>Strawberry tea</option>
+<option>Lychee tea </option>
+<option>Exotic chocolate</option>
+<option>Red Velvet</option>
+<option>Blue berry</option>
+<option>Black Forest</option>
+<option>Choco tuffle</option>
+</select>
+</tr>
+
+<br>
+<tr>
+<td><label for="spin">quantity</label></td>
+<td><input type="number" id="spin" name="spin" min="1" max="20" style="width:165px"></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<table>
+<tr>
+<th colspan="2"><input type="submit" value="place order" style="width:250px"</th>
+<th colspan="2"><input type="reset" style="width:250px"></tr>
+
+</table>
+
+</form>
+</fieldset>
+</body>
+</center>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>feedback form</title>
+<link rel="icon" href="feedback icon.webp">
+</head>
+<center>
+<body>
+<fieldset Style= "width:500px">
+<center>
+<h1>FEEDBACK</h1>
+<form action="feedback recieved.html">
+<table cellspacing="20px">
+<tr>
+<td><label for ="name"> NAME</label></td>
+<td><input type="text" id="name" name="name" required autofocus pattern="[A-Z a-z]{6-15}"></td>
+</tr>
+<tr>
+<td><label for="date">DATE OF PURCHASE</label></td>
+<td><input type="date" id="date" name="date"style="width:170px"></td>
+</tr>
+
+<tr>
+<td><label for="ph.no">Mobile No</label></td>
+<td><input type="tel" id="ph.no" name="ph.no" required pattern="[6-9]{1}[0-9]{9}" style="width:170px"></td>
+</tr>
+
+<tr>
+<td><label for="content"> FEEDBACK</label></td>
+<td><textarea id="content" rows="7" cols="70">
+</textarea></td>
+</tr>
+
+<tr>
+<td><label for="review">Rate us</label></td>
+<td><input type="radio" id="1" name="review">
+	<label for="1 star">1</label>
+	<input type="radio" id="2 " name="review">
+	<label for="2 star">2</label>
+	<input type="radio" id="3" name="review">
+	<label for="3 star">3</label>
+	<input type="radio" id="4" name="review">
+	<label for="4 star">4</label>
+	<input type="radio" id="5" name="review">
+	<label for="5 star">5</label></td>
+</tr>
+
+<table>
+<input type="submit" name="submit review">
+</form>
+</center>
+</fieldset>
+</body>
+</center>
+</html>
